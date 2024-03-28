@@ -1,0 +1,429 @@
+ 
+ /* for desktop */
+
+ body{
+     
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            background-color: #f5ebe0;
+        
+ }
+ .imgLogo {
+     font-family: 'Poppins', sans-serif;
+     margin-left: 20px;
+ }
+
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+     outline: none;
+ }
+ 
+ .navbar {
+        display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            background: #EDEDE9;
+            height: 80px;
+            color: black;
+              
+           
+           
+    }
+
+    .list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        background-color: #dda25e48;
+       
+      
+        
+    }
+
+    
+
+    .Lifornav:hover{
+        font-weight: bolder;
+        color: black;
+       
+        
+       
+    }
+
+    .list ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        margin-left: 20px;
+        gap: 10px;
+    }
+
+
+         .dropdown {
+             position: relative;
+             display: inline-block;
+         }
+    
+         .dropdown-content {
+             display: none;
+             position: absolute;
+             background-color: #f5ebe0;
+             min-width: 100px;
+             padding: 30px;
+             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+             padding: 12px 16px;
+             z-index: 1;
+             margin-left: -130px;
+         }
+    
+         .dropdown:hover .dropdown-content {
+             display: block;
+         }
+
+         
+
+         
+
+          
+         .singinHide {
+             display: none;
+         }
+
+  
+
+    a{
+        text-decoration: none;
+        color: black;
+         
+    }
+
+    .list ul li {
+        margin-right: 20px;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+  
+
+
+
+    .grid-item{
+        margin: auto;
+        
+    }
+
+
+
+.grid-container{
+display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 2fr));
+
+ width: 78rem;
+margin: auto;
+   
+    
+    
+}
+
+
+          .flip-card {
+              width: 200px;
+              height: 300px;
+              perspective: 1000px;
+        -webkit-box-shadow: 9px 7px 28px -9px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: 9px 7px 28px -9px rgba(0, 0, 0, 0.75);
+            box-shadow: 9px 7px 28px -9px rgba(0, 0, 0, 0.75);
+          }
+    
+          img {
+              width: 200px;
+              height: 300px;
+          }
+    
+          /* This container is needed to position the front and back side */
+          .flip-card-inner {
+              position: relative;
+              width: 100%;
+              height: 100%;
+              text-align: center;
+              transition: transform 0.8s;
+              transform-style: preserve-3d;
+          }
+    
+          /* Do an horizontal flip when you move the mouse over the flip box container */
+          .flip-card:hover .flip-card-inner {
+              transform: rotateY(180deg);
+          }
+    
+          /* Position the front and back side */
+          .flip-card-front,
+          .flip-card-back {
+              position: absolute;
+              width: 100%;
+              height: 100%;
+              backface-visibility: hidden;
+          }
+    
+          /* Style the front side (fallback if image is missing) */
+          .flip-card-front {
+              color: black;
+            
+          }
+    
+          /* Style the back side */
+          .flip-card-back {
+              background-color: #edede9;
+              color: black;
+              width: 210px;
+              transform: rotateY(180deg);
+          }
+    
+          .img-book {
+              height: 300px;
+              width: 200px;
+          }
+
+
+          .cardss{
+            background-color: #ffffff00;
+            text-align: center;
+                width: 200px;
+          }
+
+
+
+          /* title heading */
+
+          .titleheading{
+            font-size: 40px;
+            font-weight: 100;
+            line-height: 2px;
+            font-family: 'Times New Roman', Times, serif;
+          }
+
+          .text{
+            text-align: center;
+            margin: auto;
+          }
+          .vr{
+            border-bottom: 5px solid black;
+            width: 70rem;
+            text-align: center;
+            margin: auto;
+          }
+
+          .vrforbook{
+            border-bottom: 5px solid black;
+                width: 71rem;
+                text-align: center;
+                margin: auto;
+          }
+
+          .newly{
+           font-size: 20px;
+          }
+
+          .grid-containers{
+           display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 300px;
+            padding: 20px;
+            list-style: none;
+            margin: auto;
+            text-align: center;
+
+            
+            /* margin-top: -100px; */
+          }
+
+          .searchbar{
+        
+            padding: 10px; 
+            border-radius: 12px;
+            width: 280px;
+          }
+
+
+          .inFeaturedbook{
+            height: 100%;
+        
+          }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        /* Media query for responsive layout */
+                        @media only screen and (max-width: 360px) {
+
+
+                            .vrforbook{
+                                width: 100%;
+                            }
+
+                            .grid-container{
+                                width: 100%;
+                            }
+ 
+
+                            .vr{
+                                display: none;
+                            }
+                            .grid-containers {
+                                    display: grid;
+                                    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                                    gap: 10px;
+                                    padding: 20px;
+                                    list-style: none;
+                                    margin: auto;
+                                    text-align: center;
+                            
+                            
+                                    /* margin-top: -100px; */
+                                }
+
+                            .navbar{
+                                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+                                        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                            }
+                            .flip-card{
+                                -webkit-box-shadow: 9px 7px 28px -9px rgba(0, 0, 0, 0);
+                                    -moz-box-shadow: 9px 7px 28px -9px rgba(0, 0, 0, 0);
+                                    box-shadow: 9px 7px 28px -9px rgba(97, 0, 0, 0);
+                            }
+            
+                            .flip-card-back{
+                                height: 200px;
+                                width: 80%;
+                                margin-left: 20px;
+                                perspective: 1000px;
+                                   
+                            }
+
+                            .img-book{
+                                height: 200px;
+                                width: 80%;
+                                
+                            }
+            
+                            .dropdown {
+                                display: none;
+                            }
+            
+                            .imgLogo {
+                                font-family: 'Poppins', sans-serif;
+                                margin-left: 10px;
+                                margin-top: 10px;
+                            }
+            
+                            .list ul {
+                                justify-content: center;
+                                display: none;
+                                flex-direction: column;
+                                position: absolute;
+                                top: 80px;
+            
+                                margin-left: -20px;
+                                background-color: #DDA15E;
+                                width: 100%;
+                                padding: 10px;
+                                box-sizing: border-box;
+                                z-index: 9991;
+                                text-align: center;
+                            }
+                            .list{
+                                background-color: rgba(255, 255, 255, 0);
+                            }
+            
+                            .singinHide {
+                                display: block;
+                            }
+            
+            
+            
+                            .list ul li {
+                                margin-right: 0;
+                                margin-bottom: 10px;
+                            }
+            
+                            .menu-toggle {
+                                display: block;
+                                position: absolute;
+                                top: 20px;
+                                right: 20px;
+                                background: none;
+                                border: none;
+                                color: white;
+                                font-size: 20px;
+                                cursor: pointer;
+                            }
+            
+                            .iconinav {
+                                font-size: 40px;
+                                color: rgb(0, 0, 0);
+                            }
+            
+                            /* Added style for toggling */
+                            .list ul.active {
+                                display: flex;
+                            }
+            
+                            .grid-item {
+                                margin: auto;
+                            }
+            
+                            /* title heading */
+            
+                            .titleheading {
+                               font-size: 20px;
+                               color: black;
+                               font-family: 'Times New Roman', Times, serif;
+                              
+                               text-align: center;
+                               margin: auto;
+                            }
+            
+                            .searchbar {
+                                width: 200px;
+                            }
+            
+                            .text {
+                                display: flex;
+                                margin-bottom: 100px;
+            
+                            }
+
+                            .inFeaturedbook{
+                                display: none;
+                            }
+            
+            
+            
+            
+                        }
+     
