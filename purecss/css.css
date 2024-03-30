@@ -279,7 +279,7 @@ margin: auto;
 
 
                         /* Media query for responsive layout */
-                        @media only screen and (max-width: 360px) {
+                                         @media only screen and (max-width: 360px) {
 
 
                             .vrforbook{
